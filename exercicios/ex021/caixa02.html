@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(240, 192, 192, 0.336);
+        }
+        header {
+            width: auto;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgba(240, 207, 207, 0.466);
+            color: rgba(255, 0, 0, 0.555);
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 5px 3px 7px 1px; /* 'inset' a sombra dentro caixa */
+        }
+        nav > a{
+            text-decoration: none;
+            color: rgb(168, 111, 111);
+            font-weight: bold;
+            margin-right: 30px
+
+
+        }
+        nav > a {
+            background-color: rgba(128, 128, 128, 0.144);
+            padding: 3px;
+            
+        }
+        main{
+            background-color: rgb(247, 214, 214);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 50px;
+            
+        }
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        aside{
+            background-color: rgba(72, 235, 85, 0.548);
+            width: auto;
+            height: 20px;            
+        }
+        aside > p{
+            font-style:oblique;
+        }
+        footer{
+            background-color: rgb(5, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;  
+        }
+        footer > p{
+            padding: 4px;
+        }
+      
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site &lt;h1></h1>
+        <nav>
+            <a href="">Link- &lt;nav &lt;/nav></a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h4>Resumo de hoje  &lt;main> &lt;/main> </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perspiciatis cupiditate harum dolorum, adipisci nisi quia tempore doloribus vel a sunt repellat, necessitatibus corporis suscipit, voluptatum obcaecati quo numquam officiis!</p>
+
+        </section>
+        <section id="Noticias"></section>
+                <h2> Noticias sobre o Brasil &lt;h2> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio explicabo illum eveniet, atque unde saepe omnis provident, dolor neque rem suscipit, nulla modi quaerat sunt molestiae quas tempore voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae, enim incidunt earum natus laudantium eius a est, quia maiores nesciunt. Amet ab veniam sit ipsum illo placeat, quidem nam!</p>
+                <aside>
+                    <p><a href="">Artigo Escrito por desconhecido (&lt;aside>)</a></p>
+                </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Cursoemvideo &lt;footer></p>
+    </footer>
+</body>
+</html>

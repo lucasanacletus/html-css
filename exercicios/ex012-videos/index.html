@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado em seridor próprio</p>
+
+<video width="640" poster="imagens/bike-capa.jpg" controls autoplay loop> <!-- com autoplay e loop = se inicia automatico e repete sem parar -->
+
+    <source src="imagens/bike.mp4" type="video/mp4"> <!-- colocar outros formatos para que funcione em varios navegadores "mp4 ogg wav e outros" -->
+    <source src="imagens/bike.mp4" type="video/webm"> 
+    <source src="imagens/bike.mp4" type="video/ogg">
+    <source src="imagens/bike.mp4" type="video/wav">
+    
+    <p>seu navegador não é comprativel com a reprodução de videos <a href="imagens/bike.mp4"> faça o download aqui</a></p>
+</video>
+
+<h1>Inserindo vídeos do Youtube</h1>
+<iframe width="640" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<h1>Inserindo vídeos do Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/768689270?h=1775d48f49" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
