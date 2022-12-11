@@ -11,8 +11,8 @@
 }
 
 * {
-    margin:0px;
-    padding:0px;
+    margin: 0px;px;
+    padding-top: 1px;
 }
 html,body{
     min-height: 100vh;/* tamanho minino do viewort */
@@ -33,7 +33,7 @@ header > h1 {
      /*text-transform: uppercase; aumata letras para maiuscula */
 }
 header >p{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 a:hover , footer a:hover{
     text-decoration: underline;
@@ -46,24 +46,45 @@ header a, footer a {
 section{
     font-family: var(--fonte3);
     font-size: 2vh;
-    padding-top: 5vh;/* espaço acima texto section */
-    padding-bottom: 5vh;/* espaço abaixo texto section*/
+    padding-top: 0vh;/* espaço acima texto section */
+    padding-bottom: 0vh;/* espaço abaixo texto section*/
     line-height: 2em;/* esáçamento letras */
     padding-left: 30px;/* afasta borda esquerda */
+}
+section > p{
+    padding-top: 0px;
+   padding-bottom: -1px; /* espaço entre <p> das estrofes */
 }
 section.normal {
     background-color: white;
     color: black;
+    padding-top: 0%;
 }
 section.imagem {
+
     background-color: rgb(112, 87, 87);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;/* sombra borda da imagem */
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p{/* caixa em volta do paragrafo */
+    margin: 7px;
     display: inline-block; /* caixa se adapta tamanho do conteúdo */
-    background-color: rgba(0, 0, 0, 0.459);
-
+    background-color: rgba(0, 0, 0, 0.411);
+    text-shadow: 1px 1px 0px;
 }
+
+section#img01{/* no html na section colocar class=id e aqui "style" chmar com section#+nome que foi colocado no html da section */
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center ;
+}
+
+section#img02{
+background-image: url('../imagens/background002.jpg');
+background-position: right center;
+}
+
 footer{
     background-color:black;
     color: white;
