@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    min-height: 100vh;/* tamanho minino do viewort */
+    background-color: white;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;   
+    font-variant: small-caps;  
+     /*text-transform: uppercase; aumata letras para maiuscula */
+}
+header >p{
+    padding-bottom: 50px;
+}
+a:hover , footer a:hover{
+    text-decoration: underline;
+ }
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+section{
+    padding-top: 5vh;/* espaço acima texto section */
+    padding-bottom: 5vh;/* espaço abaixo texto section*/
+    line-height: 2em;/* esáçamento letras */
+    padding-left: 30px;/* afasta borda esquerda */
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(112, 87, 87);
+    color: white;
+}
+section.imagem > p{/* caixa em volta do paragrafo */
+    width: 400px; 
+    background-color: rgba(0, 0, 0, 0.459);
+
+}
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
