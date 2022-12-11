@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela (vinculo)</title>
     <style>
         body{
-            height: 100vh;
+            height: 100vh;          
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: repeat-y;
-            background-size: cover; /* ajusta imagem e preencher tela inteira */
+            background-size: cover; /* ajusta imagem e preencher tela inteira 
+            background-attachment: fixed; rola texto com imagem fundo travada 
+            */
 
-
+            /*shorthand - background
+            color > image > position > repeat > [size] > attachment */
+             background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+             background-size: cover;
         }
         main{
             background-color: white;
@@ -23,6 +29,7 @@
             margin: auto;
             border: 1px solid blue;
             border-radius: 15px;
+            max-width: 400px;
         }
     </style>
 </head>
