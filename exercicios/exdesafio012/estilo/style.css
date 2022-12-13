@@ -9,16 +9,16 @@
     --fonte2:'Passion One', cursive;
     --fonte3: 'Freehand', cursive;
 }
-
 * {
-    margin: 0px;px;
-    padding-top: 1px;
+    margin: 0px;
+    padding-top: 0px;
 }
-html,body{
-    min-height: 100vh;/* tamanho minino do viewort */
-    background-color: white; /* cor fundo do texto */
+body{
+    /* min-height: 100vh;tamanho minino do viewort */
+    background-color: rgb(250, 250, 250); /* cor fundo do texto */
     font-family: var(--fonte1);
-    font-size: 1.1em;
+    font-size: 16px;    
+    margin: -5px;
 }
 header{    
     background-color: black;
@@ -43,7 +43,7 @@ header a, footer a {
     text-decoration: none;
     font-weight: bolder;
 }
-section{
+section{   
     font-family: var(--fonte3);
     font-size: 2vh;
     padding-top: 0vh;/* espaço acima texto section */
@@ -52,42 +52,40 @@ section{
     padding-left: 30px;/* afasta borda esquerda */
 }
 section > p{
-    padding-top: 0px;
-   padding-bottom: -1px; /* espaço entre <p> das estrofes */
+    padding-top: 5px;
+    padding-bottom: 5px; /* espaço entre <p> das estrofes */   
 }
 section.normal {
-    background-color: white;
-    color: black;
-    padding-top: 0%;
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);    
+    
 }
 section.imagem {
-
-    background-color: rgb(112, 87, 87);
+    /*background-color: rgb(0, 0, 0);*/
     color: white;
-    box-shadow: inset 6px 6px 13px 0px black;/* sombra borda da imagem */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);/* sombra borda da imagem */
     background-size: cover;
     background-attachment: fixed;
 }
 section.imagem > p{/* caixa em volta do paragrafo */
-    margin: 7px;
+    margin: px;
     display: inline-block; /* caixa se adapta tamanho do conteúdo */
-    background-color: rgba(0, 0, 0, 0.411);
-    text-shadow: 1px 1px 0px;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-shadow: 1px 1px 0px black; /* sombra do texto */
 }
-
 section#img01{/* no html na section colocar class=id e aqui "style" chmar com section#+nome que foi colocado no html da section */
     background-image: url('../imagens/background001.jpg');
     background-position: right center ;
+    padding: 10px 10px 10px 30px;
 }
-
 section#img02{
 background-image: url('../imagens/background002.jpg');
 background-position: right center;
+padding: 10px 10px 10px 30px;
 }
-
 footer{
     background-color:black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
