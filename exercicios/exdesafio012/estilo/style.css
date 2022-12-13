@@ -68,7 +68,7 @@ section.imagem {
     background-attachment: fixed;
 }
 section.imagem > p{/* caixa em volta do paragrafo */
-    margin: px;
+    margin: 0px;
     display: inline-block; /* caixa se adapta tamanho do conteúdo */
     background-color: rgba(0, 0, 0, 0.466);
     text-shadow: 1px 1px 0px black; /* sombra do texto */
@@ -77,8 +77,8 @@ section#img01{/* no html na section colocar class=id e aqui "style" chmar com se
     background-image: url('../imagens/background001.jpg');
     background-position: right center ;
     padding: 10px 10px 10px 30px;
-}
-section#img02{
+    
+}section#img02{
 background-image: url('../imagens/background002.jpg');
 background-position: right center;
 padding: 10px 10px 10px 30px;
