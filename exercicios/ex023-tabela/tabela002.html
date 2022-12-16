@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 50px;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid red;
+            padding: 10px;  
+                     
+        }
+        thead,tfoot{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-weight: bolder;
+            position: relative; /* fixa cabeçalho  - configuração comportamental=não muda nada aparência*/
+        }
+        thead > tr > th {/* fixa cabeçalho */
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+        .num{
+            background-color: rgba(204, 214, 199, 0.438);
+        }
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(185, 192, 192);
+        }
+        tbody > tr:nth-child(odd){ /* começa listra pela impar - pode usar apenas 1 opção ou 2n-1*/
+            background-color: rgb(175, 202, 147);
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even){/* começa listra pela par = pode usar apenas 1 opção ou 2n*/
+            background-color: rgba(146, 94, 94, 0.438);
+            text-decoration:underline ;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso Tabelas Grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION=legenda da tabela
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH    
+     -->
+     <Table><!-- tabela -->
+        <caption>População das unidades federativas</caption>
+        <thead> <!-- cabeça -->
+            <th scope="col">Estado</th>
+            <th style="width: 50px " scope="col">População</th>
+        </thead>
+
+            <tbody><!-- corpo -->
+                <tr class="sombra">
+                    <td >São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>  
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>  
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr> 
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                </tr> 
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">8 602 865</td>
+                </tr> 
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                </tr> 
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 557 071</td>
+                </tr> <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                </tr> <tr>
+                    <td>Pará</td>
+                    <td class="num">8 602 865</td>
+                </tr> <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 164 788</td>
+                </tr> 
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 075 181</td>
+                </tr> 
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 018 354</td>
+                </tr> 
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 144 597</td>
+                </tr> 
+                <tr>
+                    <td>Espírito Santo </td>
+                    <td class="num">4 018 650</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">45 919 049</td>
+                </tr> 
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 506 853</td>
+                </tr> <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 484 466</td>
+                </tr> 
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">45 919 049</td>
+                </tr> 
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">45 919 049</td>
+                </tr> 
+                <tr>
+                    <td>Distrito Fedefal</td>
+                    <td class="num">45 919 049</td>
+                </tr> 
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">45 919 049</td>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">45 919 049</td>
+                </tr> 
+                <tr>
+                    <td>Rôndonia</td>
+                    <td class="num">45 919 049</td>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">45 919 049</td>
+                </tr>                                    
+            </tbody>
+        <tfoot><!-- pé -->
+            <th scope="row"><strong>Total de habitantes</strong></th>
+            <th >00 000 000 000</th>
+        </tfoot>
+     </Table>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos amet numquam neque et maiores. Iusto odit quidem consequuntur dicta est quo quisquam. Perspiciatis nulla quaerat ab maxime aliquam repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum architecto pariatur fuga deserunt odio dolorum asperiores nihil impedit cum, cumque aliquid commodi repudiandae inventore reprehenderit error, expedita, numquam officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi alias optio error velit sint natus cumque nihil fugit possimus minima quidem, voluptatum beatae accusantium excepturi incidunt officiis exercitationem id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam sunt ullam obcaecati. Corporis officiis illum dolore, culpa commodi, accusamus a, cupiditate soluta tempore quisquam quos veritatis harum assumenda quidem.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos amet numquam neque et maiores. Iusto odit quidem consequuntur dicta est quo quisquam. Perspiciatis nulla quaerat ab maxime aliquam repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum architecto pariatur fuga deserunt odio dolorum asperiores nihil impedit cum, cumque aliquid commodi repudiandae inventore reprehenderit error, expedita, numquam officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi alias optio error velit sint natus cumque nihil fugit possimus minima quidem, voluptatum beatae accusantium excepturi incidunt officiis exercitationem id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam sunt ullam obcaecati. Corporis officiis illum dolore, culpa commodi, accusamus a, cupiditate soluta tempore quisquam quos veritatis harum assumenda quidem.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos amet numquam neque et maiores. Iusto odit quidem consequuntur dicta est quo quisquam. Perspiciatis nulla quaerat ab maxime aliquam repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum architecto pariatur fuga deserunt odio dolorum asperiores nihil impedit cum, cumque aliquid commodi repudiandae inventore reprehenderit error, expedita, numquam officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi alias optio error velit sint natus cumque nihil fugit possimus minima quidem, voluptatum beatae accusantium excepturi incidunt officiis exercitationem id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam sunt ullam obcaecati. Corporis officiis illum dolore, culpa commodi, accusamus a, cupiditate soluta tempore quisquam quos veritatis harum assumenda quidem.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos amet numquam neque et maiores. Iusto odit quidem consequuntur dicta est quo quisquam. Perspiciatis nulla quaerat ab maxime aliquam repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum architecto pariatur fuga deserunt odio dolorum asperiores nihil impedit cum, cumque aliquid commodi repudiandae inventore reprehenderit error, expedita, numquam officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi alias optio error velit sint natus cumque nihil fugit possimus minima quidem, voluptatum beatae accusantium excepturi incidunt officiis exercitationem id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam sunt ullam obcaecati. Corporis officiis illum dolore, culpa commodi, accusamus a, cupiditate soluta tempore quisquam quos veritatis harum assumenda quidem.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos amet numquam neque et maiores. Iusto odit quidem consequuntur dicta est quo quisquam. Perspiciatis nulla quaerat ab maxime aliquam repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum architecto pariatur fuga deserunt odio dolorum asperiores nihil impedit cum, cumque aliquid commodi repudiandae inventore reprehenderit error, expedita, numquam officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi alias optio error velit sint natus cumque nihil fugit possimus minima quidem, voluptatum beatae accusantium excepturi incidunt officiis exercitationem id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam sunt ullam obcaecati. Corporis officiis illum dolore, culpa commodi, accusamus a, cupiditate soluta tempore quisquam quos veritatis harum assumenda quidem.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos amet numquam neque et maiores. Iusto odit quidem consequuntur dicta est quo quisquam. Perspiciatis nulla quaerat ab maxime aliquam repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laborum architecto pariatur fuga deserunt odio dolorum asperiores nihil impedit cum, cumque aliquid commodi repudiandae inventore reprehenderit error, expedita, numquam officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi alias optio error velit sint natus cumque nihil fugit possimus minima quidem, voluptatum beatae accusantium excepturi incidunt officiis exercitationem id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam sunt ullam obcaecati. Corporis officiis illum dolore, culpa commodi, accusamus a, cupiditate soluta tempore quisquam quos veritatis harum assumenda quidem.</p>
+</body>
+</html>
