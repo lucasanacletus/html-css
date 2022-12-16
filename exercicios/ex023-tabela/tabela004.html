@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com nome</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+            text-align: center;            
+        }
+        table{           
+            width: 500px;
+            height: 80px;
+            border-collapse: collapse;           
+        }
+        td{
+            border: 2px solid red;             
+        }
+        th{
+            text-align: center;
+            background-color: rgb(48, 54, 52);   
+            font-weight: bold;
+            color: white;
+            border: 2px solid red;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgba(61, 59, 59, 0.438);
+            }
+        tbody > tr:nth-child(even){
+            background-color: rgb(102, 69, 69);
+            }
+    </style>
+</head>
+<body>
+    <H1>Filmes Favoritos</H1>
+    <table>
+        <tr>
+            <th scope="col">Grupo</td>
+            <th scope="col">Nome</th>
+            <th colspan="3" scope="colgroup">Filmes</th>           
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>            
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Claudia Mello</td>            
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Bruno Mendonça</td>
+            <td>Intocáves</td>
+            <td>Amenesia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>           
+            <td>Daniel Lourenço</td>
+            <td>Wall-e</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>            
+            <td>Fabiana Mota</td>
+            <td>Star Wars</td>
+            <td>Táxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+        <footer>
+            <tr>
+                <td colspan="4" scope="row" >total exemplo</td>
+                <td> 1212120020022</td>
+            </tr>
+        </footer>
+    </table>
+</body>
+</html>

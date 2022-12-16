@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+            text-align: center; 
+            display: block;           
+        }
+        table{           
+            width: 300px;
+            height: 150px;
+            border-collapse: collapse;           
+        }
+        td{
+            border: 2px solid red;             
+        }
+        th{
+            text-align: center;
+            background-color: rgb(48, 54, 52);   
+            font-weight: bold;
+            color: white;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+   <br>
+    <table>
+        <tr>
+           <th colspan="5">
+            Luca Fabiano
+           </th> 
+        </tr>
+        <tr>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Disciplinas</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr>        
+              
+            <th>nota1</th>
+            <th>nota2</th>  
+                    
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup ">Exatas</th> 
+            <td>Matematica</td>
+            <td>10</td>
+            <td>10</td>            
+            <td>10</td>
+        </tr>        
+        <tr>
+            <td>Física</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td >Quimica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+       <tr>
+        <th colspan="4">Media Exata</th>
+        <td colspan="1">0</td>
+       </tr>
+     
+    <tr>
+        <th rowspan="2" scope="rowgroup ">Humanas</th>    
+        <td>História</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td >Geografia</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+   <tr>
+    <th colspan="4">Media Humanas</th>
+    <td colspan="1">0</td>
+   </tr>
+    </table>
+</body>
+</html>
