@@ -9,19 +9,29 @@
 <body>
     <h1>Formulario Email</h1>    
         <form action="cadastro.php">
+            <fieldset> 
+                <legend> Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
             <p>
               <label for="iemail">Email:</label>  
              <input type="email" name="email" id="iemail" autocomplete="email" required>
             </p>
             <p>
                 <label for="itel">Telefone:</label>
-                <input pattern="^\(\d{2}\)\d{4,5}-\d{4]$" type="tel" name="tel" id="itel" autocomplete="tel"  required>
+                <input pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" type="tel" name="tel" id="itel" autocomplete="tel"  required placeholder="(xx)xxxx-xxxx">
             </p> 
+            <p>
+                <label>Telefone: <input required name="tel" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}"></label> (xx) xxxx-xxxx
+            </p>                
             <!-- Estudar expressão regular Regex-->
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
+        </fieldset>
 </form>
 </body>
 </html>
