@@ -13,10 +13,12 @@ html, body{
     background-color: #233eff;
     background-size: contain; /* faz caber toda imagem */
     background-repeat: no-repeat;
+    text-align: center;
 
 }
 h1{
     color: white;
     text-shadow:  3px 3px 0px #060f49;
-    padding: 10px;
+    padding: 10px center;
+       
 }
