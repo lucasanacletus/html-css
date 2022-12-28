@@ -44,7 +44,7 @@ main{
     background-color: white;
     margin:auto;
     margin-top: 5px;
-    padding: 10px;
+    padding: 20px 20px 20px 20px;
     border-radius: 30px;
 }
 article > h2 {
