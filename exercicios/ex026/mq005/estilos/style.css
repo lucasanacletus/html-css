@@ -13,7 +13,7 @@ span#burguer{
     display: block;
     padding: 0px;
     cursor: pointer;
-    width: 50px;
+    width: 100vw;
 }
 
 body,html{
@@ -43,7 +43,7 @@ main{
     width: 280px;
     background-color: white;
     margin:auto;
-    margin-top: 5px;
+    margin-top: 55px;
     padding: 20px 20px 20px 20px;
     border-radius: 30px;
 }

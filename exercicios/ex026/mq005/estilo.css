@@ -6,7 +6,6 @@
 body{
 font-family: arial, helvetica, sans-serif;
 font-size: 12px;
-
 }
 
 
@@ -15,7 +14,6 @@ list-style:none;
 border:1px solid #28d46100;
 float:none;
 text-decoration: none;
-
 }
 
 .menu li{
@@ -26,9 +24,8 @@ text-decoration: none;
     }
 
 .menu li a{
-    color:#333; text-decoration:none; padding:5px 49vw; display:block;
-    text-align: center;
- 
+    color:#333; text-decoration:none; padding:10px 0vw; display:block;
+    text-align: center; 
 }
 
 .menu li a:hover{
