@@ -1,14 +1,13 @@
 @charset "UTF-8";
 /* estilo do menu suspenso */
 
-*{margin: 0; padding: 0;}
+*{margin: 0; 
+  padding: 0;}
 
 body{
 font-family: arial, helvetica, sans-serif;
 font-size: 12px;
 }
-
-
 .menu{
 list-style:none;
 border:1px solid #28d46100;
@@ -20,11 +19,14 @@ text-decoration: none;
     position:relative;
     float:left;
     border-right:1px solid #05f86200;
-    text-align: center;    
+    text-align: left;    
     }
 
 .menu li a{
-    color:#333; text-decoration:none; padding:10px 0vw; display:block;
+    color:#333; 
+    text-decoration:none; 
+    padding:0px 0vw; 
+    display:block;
     text-align: center; 
 }
 
@@ -38,9 +40,15 @@ text-shadow:0px 0px 5px rgb(21, 119, 37);
 
 .menu li  ul{
     position:absolute;
-    top:3px;    
-    background-color:rgb(223, 230, 208);
+    top:23px;    
+    background-color:rgb(141, 187, 141);
     display:none;
+    
+    }
+    a{
+        border: black solid 0.5px;
+        width: 80px;
+        text-align: left;
     }
 
 .menu li:hover ul, .menu li.over ul{display:block;}
