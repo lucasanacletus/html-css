@@ -1,56 +1,40 @@
 @charset "UTF-8";
-
+/* estilo do curso em video */
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    padding: 5px;
+}
+
+span#burguer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
     padding: 0px;
+    cursor: pointer;
+    width: 50px;
 }
 
 body,html{
-    background-color: rgb(144, 165, 179);
+    background-color: rgb(146, 165, 146);
+    margin: -5px;
+    padding: 1px;
 }
 header{
-    background-color: rgb(216, 30, 30);
-    padding-bottom: 20px;
+    background-color: rgb(146, 165, 146);
+    padding-bottom: 30px;
+    padding-top: 5px;
 }
 
 header>h1{
-    display: block;
-}
-i#burguer{
-    background-color: black;
-    color: white;
     text-align: center;
-    display: block;
-    padding: 10px;
+    margin: 0px;
+    padding-top: 20px;
 }
 
-i#burguer:hover{
-    background-color: white;
-    color: black;
-}
-menu{
-    display: none;
-}
-
-menu > ul{
-    list-style-type: none;
-}
-
-menu > ul > li a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgb(202, 195, 195);
-    color: rgb(255, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
-}
-menu > ul > li > a:hover{
-    background-color: rgb(240, 255, 240);
-}
 main{
-    width: 90vw;
+    width: 300px;
     background-color: white;
     margin:auto;
     margin-top: 10px;
@@ -58,7 +42,8 @@ main{
     border-radius: 30px;
 }
 article > h2 {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 article > p{
     text-align: justify;

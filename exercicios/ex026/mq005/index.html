@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+
+    
+
 </head>
 <body>
-    <header>
-        <h1>Meu Site Responsivo</h1>
-        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu">menu</i>
-        <menu id="itens">
-            <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
 
-            </ul>
-        </menu >
+    <br>
+    <header>
+        <h1>Meu Site Responsivo</h1>              
+        <nav id="burguer2" >
+            <ul class="menu">                
+                        <li><a href="#"><span id="burguer" class="material-symbols-outlined" >menu </span></a>
+                           <ul>
+                                <li><a href="#">Página 1</a></li><br>
+                                <li><a href="#">Página 1</a></li>
+                                <li><a href="#">Página 1</a></li>
+                                <li><a href="#">Página 1</a></li>
+                                <li><a href="#">Página 1</a></li><br>
+                                <li><a href="#">Fale conosco</a></li>
+                            </ul>
+                      </li>
+                  
+          </ul>
+        </nav>
+                <br> <br>
         <main>
             <article>
                 <h2>
@@ -33,16 +47,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt ratione veniam ipsum nisi atque odit exercitationem ea unde eos sit cumque iusto consequuntur veritatis optio quod, laborum quasi non praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente cumque non incidunt nihil modi iusto repellat odio impedit enim dolores aut quos reiciendis ducimus, provident corrupti voluptate eos est commodi?</p>
             </article>
         </main>
-        <script>
-            function clickMenu() {
-    if (itens.style.display === 'none') {
-        itens.style.display = 'block';
-    } else {
-        itens.style.display = 'none';
-    }
-    
-}           
-        </script>
+       
     </header>
 </body>
 </html>

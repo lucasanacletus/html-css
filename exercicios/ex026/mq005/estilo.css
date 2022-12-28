@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* estilo do menu suspenso */
+
+*{margin: 0; padding: 0;}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+
+}
+nav#burguer2{
+    text-align: center;
+    display: block;
+    padding: auto;
+    cursor: pointer;
+}
+
+.menu{
+list-style:none;
+border:1px solid #08ff7700;
+float:left;
+
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #05f86200;
+    text-align: left;
+    
+    }
+
+.menu li a{
+    color:#333; text-decoration:none; padding:5px 10px; display:block;
+ 
+}
+
+.menu li a:hover{
+background:rgb(1, 138, 104);
+color:rgb(255, 255, 255);
+-moz-box-shadow:0 3px 10px 0 rgb(255, 255, 255);
+-webkit-box-shadow:0 3px 10px 0 rgb(146, 247, 64);
+text-shadow:0px 0px 5px rgb(21, 119, 37);
+}
+
+.menu li  ul{
+    position:absolute;
+    top:32px;
+    
+    background-color:rgb(202, 202, 202);
+    display:none;
+    }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
